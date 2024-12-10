@@ -7,9 +7,9 @@
       repo: 'https://github.com/Akash077-Devops/test-nodejs-app.git'
       dest: '/var/www/quicksite'
         - name: Install dependencies
-          shell: npm install
-          args:
-          chdir: /var/www/quicksite
-          - name: Restart application
-          shell: pkill node; nohup node /var/www/quicksite/app.js &
+            shell: npm install
+            args:
+              chdir: /var/www/quicksite
+                - name: Restart application
+                  shell: pkill node; nohup node /var/www/quicksite/app.js &
  ...
