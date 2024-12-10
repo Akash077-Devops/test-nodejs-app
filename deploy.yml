@@ -1,3 +1,4 @@
+---
 - name: Deploy QuickSite
  hosts: localhost
  tasks:
@@ -11,3 +12,4 @@
  chdir: /var/www/quicksite
  - name: Restart application
  shell: pkill node; nohup node /var/www/quicksite/app.js &
+ ...
